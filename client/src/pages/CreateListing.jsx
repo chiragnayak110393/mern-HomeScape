@@ -21,7 +21,7 @@ export default function CreateListing() {
     type: 'rent',
     bedrooms: 1,
     bathrooms: 1,
-    regularPrice: 8000,
+    regularPrice: 50,
     discountPrice: 0,
     offer: false,
     parking: false,
@@ -122,8 +122,6 @@ export default function CreateListing() {
       });
     }
   };
-
-  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -304,7 +302,7 @@ export default function CreateListing() {
                   <p>Discounted price</p>
 
                   {formData.type === 'rent' && (
-                    <span className='text-xs'>($ / month)</span>
+                    <span className='text-xs'>(Rs / month)</span>
                   )}
                 </div>
               </div>
