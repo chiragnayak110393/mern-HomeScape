@@ -13,7 +13,7 @@ mongoose.connect(process.env.Pass).then(() => {
   console.log('Connected to MongoDB');
   }).catch((error) => console.error('Error connecting to MongoDB:', error));
 
-  const _dirname = path.resolve();
+  const __dirname = path.resolve();
 
 const app = express();
 
