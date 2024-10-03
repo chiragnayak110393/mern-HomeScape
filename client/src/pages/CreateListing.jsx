@@ -19,7 +19,7 @@ export default function CreateListing() {
     description: '',
     address: '',
     type: 'rent',
-    bedrooms: 1,
+    BHK: 1,
     bathrooms: 1,
     regularPrice: 50,
     discountPrice: 0,
@@ -121,6 +121,10 @@ export default function CreateListing() {
         [e.target.id]: e.target.value,
       });
     }
+    if (e.target.id === 'BHK') {
+      setFormData({ ...formData, BHK: parseInt(e.target.value) });
+    }
+
   };
 
   const handleSubmit = async (e) => {
@@ -245,15 +249,15 @@ export default function CreateListing() {
             <div className='flex items-center gap-2'>
               <input
                 type='number'
-                id='bedrooms'
+                id='BHK'
                 min='1'
                 max='10'
                 required
                 className='p-3 border border-gray-300 rounded-lg'
                 onChange={handleChange}
-                value={formData.bedrooms}
+                value={formData.BHK}
               />
-              <p>Beds</p>
+              <p>BHK</p>
             </div>
             <div className='flex items-center gap-2'>
               <input

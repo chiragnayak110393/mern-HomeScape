@@ -50,11 +50,11 @@ export default function Home() {
       {/* top */}
       <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
         <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
-        Where <span className='text-slate-500'>Home Buying</span>
-          <br />
-          Meets<span className='text-slate-400'> Easy Financing</span>
+        Where <span className='text-slate-500'>Home Buying </span>
+          
+           Meets<span className='text-slate-400'> Easy Financing </span>
         </h1>
-        <div className='text-gray-400 text-xs sm:text-sm'>
+        <div className='text-black-400 text-semi-bold sm:text-sm'>
           HomeScape is the best place to find your next perfect place to
           live.
           <br />
@@ -76,7 +76,7 @@ export default function Home() {
             <SwiperSlide>
               <div
                 style={{
-                  background: `url(${listing.imageUrls[0]}) center no-repeat`,
+                  background: `url(${listing.imageUrls[0]}) center `,
                   backgroundSize: 'cover',
                 }}
                 className='h-[500px]'

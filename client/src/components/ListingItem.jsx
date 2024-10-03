@@ -33,9 +33,7 @@ export default function ListingItem({ listing }) {
           </p>
           <div className='text-slate-700 flex gap-4'>
             <div className='font-bold text-xs'>
-              {listing.bedrooms > 1
-                ? `${listing.bedrooms} beds `
-                : `${listing.bedrooms} bed `}
+              {listing.BHK && listing.BHK !== '' ? (listing.BHK > 1 ? `${listing.BHK} BHKs ` : `${listing.BHK} BHK `) : 'N/A'}
             </div>
             <div className='font-bold text-xs'>
               {listing.bathrooms > 1
