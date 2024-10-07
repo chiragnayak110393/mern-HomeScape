@@ -7,6 +7,8 @@ import listingRouter from './routes/listing.route.js';
 import cookieParser from 'cookie-parser';
 import path from 'path';
 
+console.log(`__dirname: ${__dirname}`);
+console.log(`path.join(__dirname, '../client/dist'): ${path.join(__dirname, '../client/dist')}`);
 dotenv.config();
 
 mongoose.connect(process.env.Pass).then(() => {
@@ -42,4 +44,5 @@ app.use((err, req, res, next) =>{
      statusCode,
     message,
  });
+ 
 })
